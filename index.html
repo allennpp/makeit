@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>makeit</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+
+</head>
+
+<a-assets>
+
+    <a-asset-item id="optimerBoldFont" src="./type.json"></a-asset-item> 
+    <img id="poems" src="./poems.jpg"> 
+    <img id="pome2" src="./pome2.jpg"> 
+    <img id="poem3" src="./poem3.jpg"> 
+    <img id="poem4" src="./poem4.jpg"> 
+
+</a-assets>
+
+    
+<body>
+    <a-scene>
+
+        <a-sky  src= "metro.JPG"></a-sky>
+
+        <a-sphere position="178.437 0.728 -3.748" radius="1.25" scale="10 10 10" color="#d6c44c"></a-sphere>        
+        <a-tetrahedron color="#FF926B" position= "0.075 0.728 -3.748" animation= "property: position; to: 171.743  1  0; dur: 11000; easing: linear; loop: true" scale="0.2 0.2 0.2" color="#d6c44c"radius="5"></a-tetrahedron>
+        <a-tetrahedron color="#6bfdff" position= "0.075 0.728 -3.748" animation= "property: position; to: -383.264  1  0; dur: 11000; easing: linear; loop: true" scale="0.2 0.2 0.2" color="#d6c44c"radius="5"></a-tetrahedron>
+        <a-tetrahedron color="#bc4224" position= "0.075 0.728 -3.748" animation= "property: position; to: 0  1  -301.890; dur: 11000; easing: linear; loop: true" scale="0.2 0.2 0.2" color="#d6c44c"radius="5"></a-tetrahedron>
+
+        <a-entity text-geometry="value: Fake it till you make it; font: #optimerBoldFont ; size:4;  height: 4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-60.197 4.444 -56.813" material=" color:  #d7568e;"  ></a-entity> 
+        
+        <a-entity text-geometry="value: c mon ; font: #optimerBoldFont ; size:5;  height: 5; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="22.623 58.025 10.900" rotation="90  180  0" material=" color:  #0edd4c;"  ></a-entity> 
+        <a-entity text-geometry="value: davai; font: #optimerBoldFont ; size:5;  height: 5; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="24.241 53.518 -4.403" rotation="90  180  0" material=" color:  #0edd4c;"  ></a-entity> 
+
+        <a-image src= "#poems" material="side: double; opacity:.7 alphatest: 0.5s" scale= "50 50 50" position="41.524 2.675 63.409" rotation= "0.00  180  0.00"></a-image>
+        
+        <a-image src= "#pome2" material="side: double; opacity:.7 alphatest: 0.5s" scale= "50 50 50" position="-8.381 2.675 63.409" rotation= "0.00  180  0.00"></a-image>
+
+        <a-image src= "#poem3" material="side: double; opacity:.7 alphatest: 0.5s" scale= "50 50 50" position="-58.128 2.675 63.409" rotation= "0.00  180  0.00"></a-image>
+
+        <a-image src= "#poem4" material="side: double; opacity:.7 alphatest: 0.5s" scale= "50 50 50" position="-107.788 2.675 63.409" rotation= "0.00  180  0.00"></a-image>
+
+    </a-scene>
+    
+</body>
+</html>
